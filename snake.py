@@ -18,7 +18,6 @@ pygame.display.set_caption("Snake")
 snake_block = 20
 snake_speed = 10
 
-
 clock = pygame.time.Clock()
 
 font_style = pygame.font.SysFont("bahnschrift", 25)
@@ -75,7 +74,6 @@ def gameLoop():
 					if event.key == pygame.K_c:
 						gameLoop()
 
-		
 		for event in pygame.event.get():
 			if event.type == pygame.QUIT:
 				game_over = False
@@ -116,7 +114,6 @@ def gameLoop():
 
 		our_snake(snake_block, snake_List)
 		Your_score(lenght_of_snake - 1)
-
 
 		pygame.display.update()
 
